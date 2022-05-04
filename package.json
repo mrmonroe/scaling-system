@@ -1,0 +1,28 @@
+{
+  "name": "scaling-system",
+  "version": "1.0.0",
+  "description": "New Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "nodemon --watch src --exec npm run serve",
+    "serve": "npx http-server -d false --cors --no-dotfiles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmonroe/scaling-system.git"
+  },
+  "author": "Matt Monroe",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mrmonroe/scaling-system/issues"
+  },
+  "homepage": "https://github.com/mrmonroe/scaling-system#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "http-server": "^14.1.0",
+    "mocha": "^10.0.0"
+  }
+}
