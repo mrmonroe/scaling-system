@@ -4,5 +4,8 @@
     "ecmaFeatures": {
       "impliedStrict": true
     }
+  },
+  "rules": {
+    "import/extensions": "off"
   }
 }
