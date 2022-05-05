@@ -2,11 +2,13 @@
   "name": "scaling-system",
   "version": "1.0.0",
   "description": "New Game",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "mocha",
-    "start": "nodemon --watch src --exec npm run serve",
-    "serve": "npx http-server -d false --cors --no-dotfiles"
+    "build:dev": "webpack --config webpack.dev.config.cjs --progress",
+    "dev": "webpack serve --config webpack.dev.config.cjs --hot",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,25 @@
   },
   "homepage": "https://github.com/mrmonroe/scaling-system#readme",
   "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-preset-env": "^1.7.0",
     "chai": "^4.3.6",
+    "html-webpack-plugin": "^5.5.0",
+    "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.14.0",
     "eslint-config-airbnb": "^19.0.4",
     "http-server": "^14.1.0",
-    "mocha": "^10.0.0"
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "phaser": "^3.55.2"
   }
 }
