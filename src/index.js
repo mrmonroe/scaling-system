@@ -4,13 +4,25 @@ import version from '../package.json';
 
 const config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width: 960,
+  height: 680,
   backgroundColor: '#000000',
   parent: 'thegame',
   scene: [SceneA],
   title: 'The Game',
   version,
+  pixelArt: true,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 300 },
+      debug: false,
+    },
+  },
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+  },
   banner: {
     text: '#ffffff',
     background: ['#fff200', '#38f0e8', '#00bff3', '#ec008c'],

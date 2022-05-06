@@ -27,10 +27,11 @@
     "babel-loader": "^8.2.5",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.3.6",
-    "html-webpack-plugin": "^5.5.0",
     "clean-webpack-plugin": "^4.0.0",
     "eslint": "^8.14.0",
     "eslint-config-airbnb": "^19.0.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "http-server": "^14.1.0",
     "mocha": "^10.0.0",
     "nodemon": "^2.0.16",
@@ -40,6 +41,7 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
+    "buffer": "^6.0.3",
     "phaser": "^3.55.2"
   }
 }
