@@ -11,6 +11,15 @@ const config = {
   scene: [SceneA],
   title: 'The Game',
   version,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 300 },
+    },
+  },
+  scale: {
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+  },
   banner: {
     text: '#ffffff',
     background: ['#fff200', '#38f0e8', '#00bff3', '#ec008c'],

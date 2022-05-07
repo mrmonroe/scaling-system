@@ -6,6 +6,8 @@
     }
   },
   "rules": {
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "comma-dangle": "off",
+    "no-unused-expressions": "off"
   }
 }
