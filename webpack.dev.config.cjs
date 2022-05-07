@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { name } = require('./package.json').name;
 
 module.exports = {
+  devtool: 'source-map',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
@@ -39,7 +40,8 @@ module.exports = {
     ],
   },
   devServer: {
-    port: 8081,
+    port: 8888,
+    webSocketServer: 'ws',
     watchFiles: ['src/**/*.js', 'src/**/*.hbs', 'src/**/*.html'],
   },
 };
